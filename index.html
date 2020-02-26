@@ -16,6 +16,36 @@
             padding: 0;
             width: 100% !important;
         }
+
+        @media screen and (max-width: 550px) {
+
+            .fullwidth-column th {
+                width: 100% !important;
+                display: inline-block;
+                text-align: center;
+                font-size: 18px;
+                height: auto;
+                padding: 10px 0 !important;
+                margin: 0 auto !important;
+            }
+
+            .fullwidth-column img {
+                width: 70% !important;
+                display: inline-block;
+                text-align: left;
+                height: auto;
+                padding: 0 !important;
+                margin: 0 auto !important;
+            }
+
+            .show-img-mobile {
+                display: inline-block !important;
+            }
+
+            .hide-img-mobile {
+                display: none !important;
+            }
+        }
     </style>
 </head>
 
@@ -29,8 +59,10 @@
                 <table class="fullwidth" cellspacing="0" cellpadding="0" width="100%">
                     <tr style="background-color:#F2F2F2;">
                         <td width="100%" align="left" valign="top">
-                            <p style="margin-left:10px; background-color:F2F2F2">We've got Bacon (and it's really good!) | View:
-                                <a href="https://melperez19.github.io/HTML-Promotional-Email/" style="color: #000000">Web Version</a></p>
+                            <p style="margin-left:10px; background-color:F2F2F2">We've got Bacon (and it's really good!)
+                                | View:
+                                <a href="https://melperez19.github.io/HTML-Promotional-Email/"
+                                    style="color: #000000">Web Version</a></p>
                         </td>
                     </tr>
                 </table>
@@ -97,6 +129,11 @@
                 <!-- 2 column layout - Text left / Image Right -->
                 <table class="fullwidth-column" cellspacing="0" cellpadding="0" width="100%">
                     <tr>
+                        <th align="center" class="show-img-mobile" style="display: none;">
+                            <img style="border-radius:50%; margin: 0px 10px;padding-right:10px"
+                                src="https://www.panerabread.com/foundation/menu/grid/roasted-turkey-avocado-blt-on-country-rustic-whole.jpg.transform/foundation-retail-menu-placard-desktop-2x/image.20190702.jpg"
+                                alt="roasted turkey blt" width="200px" style="max-width: 280px;" />
+                        </th>
                         <th align="center">
                             Roasted Turkey and Avocado Melt <br>
                             <p style="font-weight: 100; text-align:center; margin: 0px 10px; color: rgb(10, 80, 10)">
@@ -105,7 +142,7 @@
                                 factor. Hearty roasted turkey and fresh avocado make this a solid choice.
                             </p>
                         </th>
-                        <th align="center">
+                        <th align="center" class="hide-img-mobile">
                             <img style="border-radius:50%; margin: 0px 10px;padding-right:10px"
                                 src="https://www.panerabread.com/foundation/menu/grid/roasted-turkey-avocado-blt-on-country-rustic-whole.jpg.transform/foundation-retail-menu-placard-desktop-2x/image.20190702.jpg"
                                 alt="roasted turkey blt" width="200px" style="max-width: 280px;" />
@@ -155,64 +192,67 @@
                 </table>
                 <br>
                 <!-- Footer Content 1st Row-->
-                <table class="fullwidth" cellspacing="0" cellpadding="0" width="100%" style="background-color: rgb(247, 247, 240);">
+                <table class="fullwidth" cellspacing="0" cellpadding="0" width="100%"
+                    style="background-color: rgb(247, 247, 240);">
                     <tr align=" center">
-                    <th style="padding-top:18px"><a href="#"><img
-                                src="https://static1.squarespace.com/static/5639629de4b05b184b572406/t/56a7c667ab28106eca63707b/1453835881454/supermarket?format=1500w"
-                                alt="order online icon" width="30px" /></a>
-                    </th>
-                    <th style="padding-top:18px"><a href="#"><img
-                                src="https://cdn2.iconfinder.com/data/icons/restaurant-43/550/spoon-512.png"
-                                alt="view menu icon" width="30px" /></a>
-                    </th>
-                    <th style="padding-top:18px"><a href="#"><img
-                                src="https://static.thenounproject.com/png/14236-200.png" alt="location icon"
-                                width="30px" /></a>
-                    </th>
-                    <th style="padding-top:18px"><a href="#"><img
-                                src="https://static.thenounproject.com/png/594650-200.png" alt="rewards icon"
-                                width="30px" /></a>
-                    </th>
-        </tr>
-        <tr align="center">
-            <td style="padding-top:5px; color:rgb(78, 185, 78)">Order Online</td>
-            <td style="padding-top:5px; color:rgb(78, 185, 78)">Our Menu</td>
-            <td style="padding-top:5px; color:rgb(78, 185, 78)">Find A Cafe</td>
-            <td style="padding-top:5px; color:rgb(78, 185, 78)">My Rewards</td>
-        </tr>
-    </table>
-    <!-- Footer Content 2nd Row-->
-    <table class="fullwidth" cellspacing="0" cellpadding="0" width="100%" style="background-color: rgb(247, 247, 240);">
-        <tr>
-            <td align="center">
-                <hr style="max-width: 570px;">
+                        <th style="padding-top:18px"><a href="#"><img
+                                    src="https://static1.squarespace.com/static/5639629de4b05b184b572406/t/56a7c667ab28106eca63707b/1453835881454/supermarket?format=1500w"
+                                    alt="order online icon" width="30px" /></a>
+                        </th>
+                        <th style="padding-top:18px"><a href="#"><img
+                                    src="https://cdn2.iconfinder.com/data/icons/restaurant-43/550/spoon-512.png"
+                                    alt="view menu icon" width="30px" /></a>
+                        </th>
+                        <th style="padding-top:18px"><a href="#"><img
+                                    src="https://static.thenounproject.com/png/14236-200.png" alt="location icon"
+                                    width="30px" /></a>
+                        </th>
+                        <th style="padding-top:18px"><a href="#"><img
+                                    src="https://static.thenounproject.com/png/594650-200.png" alt="rewards icon"
+                                    width="30px" /></a>
+                        </th>
+                    </tr>
+                    <tr align="center">
+                        <td style="padding-top:5px; color:rgb(78, 185, 78)">Order Online</td>
+                        <td style="padding-top:5px; color:rgb(78, 185, 78)">Our Menu</td>
+                        <td style="padding-top:5px; color:rgb(78, 185, 78)">Find A Cafe</td>
+                        <td style="padding-top:5px; color:rgb(78, 185, 78)">My Rewards</td>
+                    </tr>
+                </table>
+                <!-- Footer Content 2nd Row-->
+                <table class="fullwidth" cellspacing="0" cellpadding="0" width="100%"
+                    style="background-color: rgb(247, 247, 240);">
+                    <tr>
+                        <td align="center">
+                            <hr style="max-width: 570px;">
+                        </td>
+                    </tr>
+                </table>
+                <table class="fullwidth" cellspacing="0" cellpadding="0" width="100%"
+                    style="background-color: rgb(247, 247, 240);">
+                    <tr align="center">
+                        <th>
+                            <a href="#"><img style="padding-top:10px; margin-right: 10px"
+                                    src="https://cdn3.iconfinder.com/data/icons/peelicons-vol-1/50/Facebook-512.png"
+                                    alt="facebook icon" width="20" height="20" /></a>
+                            <a href="#"><img style="padding-top:10px; margin-right: 10px"
+                                    src="https://www.stickpng.com/assets/images/5a2fe479cc45e43754640849.png"
+                                    alt="twitter icon" width="20" height="20" /></a>
+                            <a href="#"><img style="padding-top:10px; margin-right: 10px"
+                                    src="http://cdn.onlinewebfonts.com/svg/img_106006.png" alt="pinterest icon"
+                                    width="20" height="20" /></a>
+                            <a href="#"><img style="padding-top:10px; margin-right: 10px"
+                                    src="https://papamoabeach.co.nz/wp-content/uploads/2017/03/instagram-icon-black-350x350.png"
+                                    alt="instagram icon" width="20" height="20" /></a>
+                        </th>
+                    </tr>
+                    <tr align="center">
+                        <td style="padding-bottom: 30px; padding-top: 5px; color:rgb(78, 185, 78)">
+                            Connect with us on Social Media</td>
+                    </tr>
+                </table>
             </td>
         </tr>
-    </table>
-    <table class="fullwidth" cellspacing="0" cellpadding="0" width="100%" style="background-color: rgb(247, 247, 240);">
-        <tr align="center">
-            <th>
-                <a href="#"><img style="padding-top:10px; margin-right: 10px"
-                        src="https://cdn3.iconfinder.com/data/icons/peelicons-vol-1/50/Facebook-512.png"
-                        alt="facebook icon" width="20" height="20" /></a>
-                <a href="#"><img style="padding-top:10px; margin-right: 10px"
-                        src="https://www.stickpng.com/assets/images/5a2fe479cc45e43754640849.png"
-                        alt="twitter icon" width="20" height="20" /></a>
-                <a href="#"><img style="padding-top:10px; margin-right: 10px"
-                        src="http://cdn.onlinewebfonts.com/svg/img_106006.png" alt="pinterest icon"
-                        width="20" height="20" /></a>
-                <a href="#"><img style="padding-top:10px; margin-right: 10px"
-                        src="https://papamoabeach.co.nz/wp-content/uploads/2017/03/instagram-icon-black-350x350.png"
-                        alt="instagram icon" width="20" height="20" /></a>
-            </th>
-        </tr>
-        <tr align="center">
-            <td style="padding-bottom: 30px; padding-top: 5px; color:rgb(78, 185, 78)">
-                Connect with us on Social Media</td>
-        </tr>
-    </table>
-    </td>
-    </tr>
     </table>
 </body>
 
